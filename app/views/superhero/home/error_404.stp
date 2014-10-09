@@ -1,0 +1,23 @@
+<?php
+/*
+ * File: 
+ * Category: -
+ * Author: MSG
+ * Created: 24.09.14 09:19
+ * Updated: -
+ *
+ * Description:
+ *  -
+ */
+ 
+ ?>
+<h1>ERROR 404</h1>
+<h3>Not found</h3>
+<p>
+    Na das hast du ja super hinbekommen... Nächstes mal bitte etwas vorsichtiger in die Tasten hauen, die Seite ist ja kein Panzer...
+    <br />
+    <br />
+    <a class="btn btn-primary btn-lg pull-right" href="<?=PAGE_ROOT?>home/index/">Zur Startseite</a>
+    <br />
+    <br />
+</p>

@@ -1,0 +1,44 @@
+<?php
+/*
+ * File: 
+ * Category: -
+ * Author: MSG
+ * Created: 24.09.14 13:58
+ * Updated: -
+ *
+ * Description:
+ *  -
+ */
+ 
+ ?>
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">Dein Profil - <?=$this->app->user->name?></h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-6 pull-left">
+        <div class="row">
+            <div class="col-lg-3">Benutzername</div>
+            <div class="col-lg-6 text-left"><?=$this->app->user->name?></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">Emailadresse</div>
+            <div class="col-lg-6 text-left"><?=$this->app->user->email?></div>
+        </div>
+    </div>
+    <div class="col-lg-6 pull-right">
+        <img src="data:image/jpeg;base64,<?=base64_encode(file_get_contents(ROOT_PATH.'/app/storage/uploads/user/'.$this->app->user->id.'/profile.jpg'))?>" class="img-thumbnail img-circle img-profile  pull-right">
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">&nbsp;</div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12 text-right">
+        <a href="<?=PAGE_ROOT?>user/edit/" class="btn btn-primary">Bearbeiten</a>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+<?php
+/*
+ * File: 
+ * Category: -
+ * Author: MSG
+ * Created: 24.09.14 12:23
+ * Updated: -
+ *
+ * Description:
+ *  -
+ */
+ 
+ ?>
+<div class="row">
+    <div class="col-lg-12">
+        <h1>Aufwiedersehen</h1>
+        <p>
+            Es war schön das du vorbei geschaut hast. Wir freuen uns schon auf deinen nächsten Besuch.
+            <br />
+            Bis dahin, machs gut.
+        </p>
+    </div>
+</div>
+<div class="row text-center">
+    <a href="<?=PAGE_ROOT?>user/login/" class="btn btn-primary btn-lg">Anmelden</a>
+</div>

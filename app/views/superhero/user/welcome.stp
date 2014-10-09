@@ -1,0 +1,40 @@
+<?php
+/*
+ * File: 
+ * Category: -
+ * Author: MSG
+ * Created: 24.09.14 13:08
+ * Updated: -
+ *
+ * Description:
+ *  -
+ */
+ 
+ ?>
+<div class="row">
+    <div class="col-lg-12">
+        <h1>Willkommen bei uns, <?=$this->app->user->name?>!</h1>
+        <p>
+            Schön das du zu uns gefunden hast und bereit bist Teil der Community zu werden.
+            <br />
+            Zunächst bitten wir dich aber dein Profil zu verfollständigen und deine Chancen die passenden Infomaterialien zu erhalten zu erhöhen.
+            <br />
+            <br />
+            Weitere Informationen findest du auch im <a href="<?=PAGE_ROOT?>faq/index/">FAQ</a>.
+        </p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">&nbsp;</div>
+</div>
+<div class="row text-center">
+    <div class="col-lg-2 col-lg-offset-3">
+        <a href="<?=PAGE_ROOT?>user/dashboard/" class="btn btn-primary btn-lg btn-block">Dashboard</a>
+    </div>
+    <div class="col-lg-2">
+        <a href="<?=PAGE_ROOT?>user/profile/" class="btn btn-primary btn-lg btn-block">Profil</a>
+    </div>
+    <div class="col-lg-2">
+        <a href="<?=PAGE_ROOT?>faq/index/" class="btn btn-primary btn-lg btn-block">FAQ</a>
+    </div>
+</div>

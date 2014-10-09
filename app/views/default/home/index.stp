@@ -1,0 +1,14 @@
+<?php
+/*
+ * File: index.php
+ * Category: -
+ * Author: MSG
+ * Created: 23.09.14 09:16
+ * Updated: -
+ *
+ * Description:
+ *  -Main app index
+ */
+
+var_dump($this->data);
+?>

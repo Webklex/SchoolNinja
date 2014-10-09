@@ -1,0 +1,61 @@
+<?php
+/*
+ * File: 
+ * Category: -
+ * Author: MSG
+ * Created: 24.09.14 16:31
+ * Updated: -
+ *
+ * Description:
+ *  -
+ */
+ 
+ ?>
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">Profil bearbeiten</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <p>
+            Dein Profil erzält uns mehr über dich, deine Person und deine Interessen. Bitte denke dran, umso mehr du uns sagst um so mehr
+            Unternehmen möchten um dich werben.
+            <br />
+            Deine Angaben werden selbstversändlich <u>nicht</u> an Dritte weitergegeben. Weiteres
+            zu diesem Thema kannst du auch unserer <a href="<?=PAGE_ROOT?>home/datenschutz/" target="_blank">Datenschutzerklärung</a>
+            entnehmen.
+        </p>
+    </div>
+</div>
+
+<form method="POST" target="_self" class="">
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="form-group">
+                <label class="control-label" for="email">Anzeigename</label>
+                <input class="form-control" id="email" type="text" placeholder="Anzeigename" name="name" value="<?=$this->app->user->name?>" />
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="form-group">
+                <label class="control-label" for="email">Emailadresse</label>
+                <input class="form-control" id="email" type="text" placeholder="Emailadresse" name="email" value="<?=$this->app->user->email?>" />
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="form-group">
+                <label class="control-label" for="passwd">Passwort</label>
+                <input class="form-control" id="passwd" type="password" placeholder="Passwort" name="passwd" value="" />
+            </div>
+        </div>
+        <div class="col-lg-3">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-2 pull-right">
+            <button type="submit" class="btn btn-primary pull-right" name="edit" style="margin-right: 15px;">Speichern</button>
+        </div>
+    </div>
+</form>

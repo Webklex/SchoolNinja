@@ -1,0 +1,67 @@
+<?php
+/*
+ * File: 
+ * Category: -
+ * Author: MSG
+ * Created: 24.09.14 12:34
+ * Updated: -
+ *
+ * Description:
+ *  -
+ */
+ 
+ ?>
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">Du willst mitmachen?</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-8">
+        <p>
+            Du willst die ein paar Mäuse dazu verdienen und bist der Werbung nicht abgeneigt? Zudem hast du Interesse an neuen
+            Produkten und bist offen für Neues?
+            <br />
+            Dann bist du bei uns gold richtig!
+            <br />
+            <br />
+            Die Registrierung ist in wenigen Sekunden erledigt. Wir freuen uns schon dich bei uns begrüßen zu dürfen.
+            <br />
+            <br />
+            Bis dahin,
+            <br />
+            <b>Euer <?=WEBSITE_NAME?> Team</b>
+        </p>
+    </div>
+    <div class="col-lg-4">
+        <form method="POST" target="_self" class="">
+            <div class="form-group">
+                <label class="control-label" for="email">Anzeigename</label>
+                <input class="form-control" id="email" type="text" placeholder="Anzeigename" name="name" value="<?=(!empty($this->app->data['post']['name'])?$this->app->data['post']['name']:'')?>" />
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="email">Emailadresse</label>
+                <input class="form-control" id="email" type="text" placeholder="Emailadresse" name="email" value="<?=(!empty($this->app->data['post']['email'])?$this->app->data['post']['email']:'')?>" />
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="passwd">Passwort</label>
+                <input class="form-control" id="passwd" type="password" placeholder="Passwort" name="passwd" value="" />
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Rechtliche Bedingungen</label>
+                <label>
+                    <input type="checkbox" name="agb" value="1" style="padding-top: 22px !important;" /> Ich habe die <a href="<?=PAGE_ROOT?>home/agb/" target="_blank">AGB</a> gelesen, versanden und stimme ihnen zu.
+                </label>
+                <label>
+                    <input type="checkbox" name="datenschutz" value="1" /> Ich habe die <a href="<?=PAGE_ROOT?>home/datenschutz/" target="_blank">Datenschutzerklärung</a> gelesen, versanden und stimme ihnen zu.
+                </label>
+            </div>
+            <div class="form-group">
+                <div class="col-lg-10 col-lg-offset-3">
+                    <button type="submit" class="btn btn-primary pull-right" name="register" style="margin-right: 15px;">Registrieren</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
