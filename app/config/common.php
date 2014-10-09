@@ -13,7 +13,7 @@
 define('PAGE_ROOT', '/');
 define('ROOT_PATH', '/var/www/dev/scraper');
 
-define('WEBSITE_NAME', 'Min Inc.');
+define('WEBSITE_NAME', 'SchoolNinja');
 
 define('DEBUG', true);
 define('DEFAULT_TEMPLATE', 'superhero');
