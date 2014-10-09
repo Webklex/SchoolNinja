@@ -55,7 +55,11 @@ class Router{
     }
 
     public function redirect($options){
-        header('Location: '.PAGE_ROOT.$options['controller'].'/'.$options['method'].'/');
+        $args = '';
+        foreach($options['args'] as $attr => $value){
+            $args .= '&'.$attr.'='.$value;
+        }
+        header('Location: '.PAGE_ROOT.$options['controller'].'/'.$options['method'].'/'.$args);
     }
 
     private function route(){
@@ -69,7 +73,7 @@ class Router{
                 if(method_exists($this->app, $this->method) == false){
                     $this->controller = 'home';
                     $this->method = 'error_404';
-                    $controller = $this->controller.'Controller';
+                    $controller = ucfirst($this->controller).'Controller';
 
                     $this->app = new $controller();
                 }
@@ -99,7 +103,7 @@ class Router{
 
     private function buildCore(){
         require_once __DIR__.'/../core/coreController.php';
-        $this->core = new coreController();
+        $this->core = new CoreController();
     }
 
     private function loadRequests(){

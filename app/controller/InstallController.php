@@ -10,7 +10,7 @@
  *  System/App installation process
  */
 
-class installController extends appController {
+class InstallController extends AppController {
 
     public function index(){}
 

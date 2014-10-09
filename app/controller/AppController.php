@@ -10,7 +10,7 @@
  *  -
  */
 
-class appController extends coreController {
+class AppController extends CoreController {
 
     private $flasher = false;
     protected $router;

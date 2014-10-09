@@ -10,7 +10,7 @@
  *  -
  */
 
-class homeController extends appController {
+class HomeController extends AppController {
 
     public function index(){
         return array('content' => 'data');

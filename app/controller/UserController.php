@@ -10,7 +10,7 @@
  *  -
  */
 
-class userController extends appController {
+class UserController extends AppController {
 
     public function login(){
 
